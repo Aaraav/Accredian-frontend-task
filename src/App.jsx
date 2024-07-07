@@ -5,17 +5,16 @@ import Signup from './components/Signup';
 import Home from './components/Home';
 
 const App = () => (
-  
   <Router>
-    <Routes>
-      {/* Route without Navbar */}
-      <Route path='/' element={<Signup />} />
-      <Route path='/home' element={<>
-        <Navbar />
-        <Home/>
-      </>} />
-
-    </Routes>
+    <div>
+      <Routes>
+        {/* Route for Signup */}
+        <Route path="/" element={<Signup />} />
+        
+        {/* Route for Home */}
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </div>
   </Router>
 );
 

@@ -7,6 +7,7 @@ import ReferProcess from './ReferProcess';
 import Tablesection from './Tablesection';
 import Question from './Question';
 import Footer from './Footer';
+import Navbar from './Navbar';
 
 export default function Home() {
   const { isAuthenticated } = useKindeAuth();
@@ -20,6 +21,7 @@ export default function Home() {
     <>
       {isAuthenticated && 
         <>
+        <Navbar/>
           <Herosection toggleReferForm={toggleReferForm} />
           {showReferForm && <Referform onCancel={toggleReferForm} />}
           <ReferProcess toggleReferForm={toggleReferForm}/>
