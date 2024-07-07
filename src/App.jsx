@@ -7,8 +7,8 @@ const App = () => (
   <Router>
     <div>
       <Routes>
-        <Route path="https://accredian-frontend-task-9twu.onrender.com" element={<Signup />} />
-        <Route path="https://accredian-frontend-task-9twu.onrender.com//home" element={<Home />} />
+        <Route path="" element={<Signup />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </div>
   </Router>
