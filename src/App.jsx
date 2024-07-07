@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'eact-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './components/Signup';
 import Home from './components/Home';
 import AuthCallback from './components/AuthCallback';
