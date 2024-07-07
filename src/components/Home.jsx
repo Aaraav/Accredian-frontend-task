@@ -12,7 +12,7 @@ import Navbar from './Navbar';
 export default function Home() {
   const { isAuthenticated } = useKindeAuth();
   const [showReferForm, setShowReferForm] = useState(false);
-
+alert('nrjufnrfufurnfd');
   const toggleReferForm = () => {
     setShowReferForm(!showReferForm); // Toggle the state to show/hide Referform
   };
