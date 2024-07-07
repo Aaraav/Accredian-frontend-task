@@ -11,7 +11,6 @@ const Not=()=>{
 }
 function App() {
   const { isAuthenticated } = useKindeAuth();
-  
   if(isAuthenticated){
   return <Home/> ;
 
@@ -19,22 +18,8 @@ function App() {
   else {
     return <Signup/>
   }
-  // return (
-
-    
-  //   // <Router>
-  //   //   <div>
-  //   //     <Routes>
-  //   //       <Route path="/" element={<Signup />} />
-  //   //       <Route path="home" element={<Home />} />
-  //   //       <Route path='/x' element={<Redirect/>}/>
-
-  //   //       <Route path='*' element={<Not/>}/>
-  //   //     </Routes>
-  //   //   </div>
-  //   // </Router>
-  // )
-
+  
+  
 }
 
 export default App;

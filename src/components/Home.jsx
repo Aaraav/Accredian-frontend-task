@@ -11,22 +11,28 @@ import Navbar from './Navbar';
 
 export default function Home() {
   const { isAuthenticated } = useKindeAuth();
-  const [showReferForm, setShowReferForm] = useState(false);
-   alert('nrjufnrfufurnfd');
+  const [ showReferForm , setShowReferForm ] = useState(false);
+
   const toggleReferForm = () => {
-    setShowReferForm(!showReferForm); // Toggle the state to show/hide Referform
+    setShowReferForm(!showReferForm); 
   };
 
   return (
     <>
       { isAuthenticated &&
         <>
-        <Navbar/>
+          <Navbar/>
+
           <Herosection toggleReferForm={toggleReferForm} />
+
           {showReferForm && <Referform onCancel={toggleReferForm} />}
+
           <ReferProcess toggleReferForm={toggleReferForm}/>
+
           <Tablesection toggleReferForm={toggleReferForm}/>
+
           <Question/>
+
           <Footer/>
         </>
       }

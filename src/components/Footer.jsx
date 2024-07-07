@@ -17,18 +17,25 @@ const Col = ({ title, img }) => {
 export default function Footer() {
   return (
     <div className='w-[100vw] h-[90vh] bg-gray-700'>
+
         <div className='flex justify-between'>
             <div>
-            <h1 className='text-2xl text-white ml-[200px] mt-7'>accredian</h1>
-            <p className='text-[12px] text-white ml-48'>Credentials that matter</p>
+                 <h1 className='text-2xl text-white ml-[200px] mt-7'>accredian</h1>
+                <p className='text-[12px] text-white ml-48'>Credentials that matter</p>
             </div>
-            <div>
+        <div>
+
             <button className='border-black bg-blue-500 text-white p-1 text-sm rounded-md w-50 mt-7 mr-[200px]'>
+
           Schedule 1-on-1 Call Now
-        </button>
-        <p className='text-[12px] text-white mr-10'>Speak with Our Learning Advisors</p>
-        </div>
-        </div>
+             </button>
+
+
+              <p className='text-[12px] text-white mr-10'>Speak with Our Learning Advisors</p>
+         </div>
+    </div>
+
+
         <hr className=' border-gray-100 w-[80vw] ml-[10vw] mt-3'/>
         
 <div className='flex justify-between'>
@@ -42,9 +49,9 @@ export default function Footer() {
                     <Col title="DIGITAL TRANSFORMATION" />
                     <Col title="ALL PROGRAMS" />
                     <Col title="BUSINESS ANALYTICS"/>
-                </div>
+        </div>
 
-                <div className='text-sm text-white mt-10 '>
+        <div className='text-sm text-white mt-10 '>
                     <h1>Contact Us</h1>
                     <p>Email us (For Data Science Queries): admissions@accredian.com</p>
                     <p>Email us (For Product Management Queries):pm@accredian.com</p>
@@ -57,8 +64,8 @@ export default function Footer() {
                     <p>Follow Us</p>
 
 
-                </div>
-                <div>
+        </div>
+        <div>
                     <ul className='text-white mr-[10vw] mt-10'>
                         <li>Accredian</li>
                         <li>About</li>
@@ -70,11 +77,11 @@ export default function Footer() {
                         <li>Terms Of Service</li>
                         <li>Master FAQs</li>
                     </ul>
-                </div>
+        </div>
 
-                </div>
+        </div>
 
-                <h1 className='text-white text-center'>© 2024 Accredian A Brand of FullStack Education Pvt Ltd. All Rights Reserved</h1>
+        <h1 className='text-white text-center'>© 2024 Accredian A Brand of FullStack Education Pvt Ltd. All Rights Reserved</h1>
     </div>
   )
 }

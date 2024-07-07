@@ -39,16 +39,21 @@ export default function Navbar() {
         <>
             <div className='w-[100vw] h-24  flex justify-between'>
                 <h1 className='mt-[20px] ml-[150px] font-semibold text-blue-500 text-3xl'>accredian</h1>
+
                 <ul className='flex mt-[2%] mr-[10%] text-lg'>
+                    
                     <li className='mr-10'>Refer & Earn</li>
                     <li className='mr-10'>Resources</li>
                     <li className='mr-10'>About us</li>
                     <li className='mr-10'>
-                        <button className='border-black bg-blue-500 text-white p-1 text-base rounded-md w-24' onClick={logout} type='button'>
+                    <button className='border-black bg-blue-500 text-white p-1 text-base rounded-md w-24' onClick={logout} type='button'>
                             Logout
-                        </button>
+                    </button>
                     </li>
+
                 </ul>
+
+
             </div>
         </>
     );
