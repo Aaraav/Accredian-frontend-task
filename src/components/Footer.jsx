@@ -16,7 +16,7 @@ const Col = ({ title, img }) => {
 
 export default function Footer() {
   return (
-    <div className='w-[100vw] h-[95vh] bg-gray-700'>
+    <div className='w-[100vw] h-[90vh] bg-gray-700'>
         <div className='flex justify-between'>
             <div>
             <h1 className='text-2xl text-white ml-[200px] mt-7'>accredian</h1>
