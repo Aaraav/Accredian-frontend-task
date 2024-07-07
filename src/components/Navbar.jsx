@@ -13,7 +13,7 @@ export default function Navbar() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    name: `${user.given_name} ${user.family_name}`, // Assuming user object has given_name and family_name
+                    name: `${user.given_name} ${user.family_name}`, 
                     email: user.email,
                 }),
             });
@@ -30,7 +30,6 @@ export default function Navbar() {
     };
 
     useEffect(() => {
-        // Call senddata function on component mount
         if (user && user.given_name && user.family_name && user.email) {
             senddata();
         }
