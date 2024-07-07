@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'eact';
-import { useNavigate, useLocation } from 'eact-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Callback = () => {
   const [error, setError] = useState(null);
