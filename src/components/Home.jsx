@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      { 
+      { isAuthenticated &&
         <>
         <Navbar/>
           <Herosection toggleReferForm={toggleReferForm} />
